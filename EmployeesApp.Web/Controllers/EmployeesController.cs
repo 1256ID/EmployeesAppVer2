@@ -22,12 +22,10 @@ namespace EmployeesApp.Web.Controllers
                     Name = e.Name,
                     Id = e.Id,
                     Email = e.Email,
+                    ShowAsHighlighted = e.Email.StartsWith("admin")
                 }).ToArray()
 
             };
-
-
-
 
             //foreach (var emp in model)
             //    Console.WriteLine($"{emp.Name}: {emp.Id}");
@@ -51,7 +49,6 @@ namespace EmployeesApp.Web.Controllers
             {
                 Name = viewModel.Name,
                 Email = viewModel.Email,
-
             };
 
             service.Add(model);

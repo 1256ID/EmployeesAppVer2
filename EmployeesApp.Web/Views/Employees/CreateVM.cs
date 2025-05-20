@@ -6,7 +6,7 @@ namespace EmployeesApp.Web.Views.Employees
     {
         public required string Name { get; set; }
         [Required(ErrorMessage = "Enter an email")]
-        [Display(Name = "Name", Prompt = "Name")]
+        [Display(Name = "Email", Prompt = "Name")]
         public required string  Email { get; set; }
         [Range(4, 4, ErrorMessage = "Wrong number")]
         [Display(Name = "Name", Prompt = "What is 2 + 2?")]
