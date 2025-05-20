@@ -8,8 +8,10 @@ namespace EmployeesApp.Web.Views.Employees
         [Required(ErrorMessage = "Enter an email")]
         [Display(Name = "Name", Prompt = "Name")]
         public required string  Email { get; set; }
-        [Range(4,4, ErrorMessage = "Wrong number")]
+        [Range(4, 4, ErrorMessage = "Wrong number")]
         [Display(Name = "Name", Prompt = "What is 2 + 2?")]
-        public int BotCheck { get; set; }
+        public int BotCheck { get; set; } 
+
+        
     }
 }
