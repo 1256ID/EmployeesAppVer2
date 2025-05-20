@@ -2,9 +2,15 @@
 {
     public class IndexVM
     {
-        public int Id { get; set; }
-        public string Name { get; set; }    
-        public string Email { get; set; }
-        public bool ShowAsHighlighted { get; set; }
+
+        public required EmployeeItemVM[] EmployeeItems { get; set; }
+        public class EmployeeItemVM
+        {
+            public required string Name { get; set; }
+            public required int Id { get; set; }
+            public bool ShowAsHighlighted { get; set; }
+            public required string Email { get; set; }
+        }
+
     }
 }
