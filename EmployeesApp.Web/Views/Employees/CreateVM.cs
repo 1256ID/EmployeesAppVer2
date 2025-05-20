@@ -5,11 +5,11 @@ namespace EmployeesApp.Web.Views.Employees
     public class CreateVM
     {
         public required string Name { get; set; }
-        [Required(ErrorMessage = "Enter an email")]
-        [Display(Name = "Name", Prompt = "Name")]
+        [Required(ErrorMessage = "Invalid email")]
+        [Display(Name = "E-mail", Prompt = "Enter e-mail")]
         public required string  Email { get; set; }
         [Range(4, 4, ErrorMessage = "Wrong number")]
-        [Display(Name = "Name", Prompt = "What is 2 + 2?")]
+        [Display(Name = "What is 2 + 2?", Prompt = "Bot check")]
         public int BotCheck { get; set; } 
 
         
