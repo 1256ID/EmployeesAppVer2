@@ -10,7 +10,7 @@ namespace EmployeesApp.Web.Views.Employees
         {
             public required string Name { get; set; }
             public required int Id { get; set; }
-            public bool ShowAsHighlighted { get => Email.StartsWith("admin"); }  
+            public bool ShowAsHighlighted { get; set; } 
             public required string Email { get; set; }
         }
 
